@@ -19,5 +19,8 @@ describe 'testfile::default' do
       chef_run # This should not raise an error
     end
 
+	it 'has a file at /tmp/test.txt' do
+		expect(chef_run).to create_file('/tmp/test.txt')
+	end
   end
 end
