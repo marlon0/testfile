@@ -10,7 +10,7 @@ package 'net-tools' do
 	action :install
 end
 
-file '/tmp/broken-test.txt' do
+file '/tmp/test.txt' do
 	content "this is a test"
 	action :create
 end
